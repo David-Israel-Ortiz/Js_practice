@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset ="utf-8">
+    <title>Op Logicos</title>
+</head>
+<body>
+    <script> 
+ //Exemplos de operadores logicos//
+ 
+ var a = true;
+ var b = false;
+ 
+
+ console.log(!a);
+ console.log(!b);
+
+ console.log ('!!a', !!a);
+ console.log ('!!b', !!b);
+
+//null, undefined, '' , false ,0
+//
+
+console.log(!!null);
+console.log(!!undefined);
+console.log(!!'');
+console.log(!!0);
+
+console.log(!!'texto');
+console.log(!!20);
+
+
+// && se todas forem verdadeiras retorna  a ultima //
+console.log(10 && 'texto' && 'Programador');
+console.log(null && 'Programador');
+
+console.log('Passa' && 0 && 'Dev');
+
+console.log('Passou' && null);
+
+console.log('Passou' &&  0);
+
+console.log("false" && 100 && '' && 'teste' && null);
+
+console.log( 10 > 5 && 7 < 10);
+
+console.log(10 > 5 && 10 > 11);
+
+//   || procura uma unica verdadeira , sempre vai retornar a unica verdadeira e se todas forem falsas vai retornar a ultima que é falsa//
+
+console.log(null || 'Programador');
+
+console.log(null || 'Programador' || 26 ); 
+
+console.log(null || '' || 26);
+
+console.log('Programador' || 'teste');
+
+console.log(10 > 5 || 10 < 11);
+
+console.log(10 > 5 || 10 > 11);
+
+console.log(10 < 5 || 10 > 11);
+
+console.log( null || false || 0);
+
+console.log('Programador' && 2050 || '' && 26);
+
+console.log('Programador' && 2050 && 'a bordo' || 0);
+
+console.log( null || !'' && 'Programador');
+    </script>
+</body>
+</html>
