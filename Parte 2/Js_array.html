@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset "UTF-8">
+    <title>Array</title>
+</head>
+<body>
+<script>
+
+var numeros =[ 5 , 3 , 12 , 17 , 10 , 99 ];
+console.log(numeros);
+
+console.log(numeros[2]);
+console.log(numeros[5]);
+console.log(numeros[0]);
+
+console.log(numeros.length);
+
+
+var numeroRetornado = numeros.pop();
+console.log('numeroRetornado', numeroRetornado);
+console.log(numeros);
+//slice nao retorna a ultima posição
+
+console.log(numeros.slice(2, 5));
+console.log(numeros.slice(3));
+
+
+//separador
+console.log(numeros.join('--'));
+console.log(numeros.join(' '));
+
+
+var usuario =[ 
+    'David',
+    26,
+    'Programador',
+    2021,
+    'Peruano'
+];
+console.log(usuario);
+
+//adiciona no array --push
+usuario.push('RS');
+
+console.log(usuario);
+
+//verifica se tem o elemento --includes
+console.log(usuario.includes('Peruano'));
+
+console.log(usuario.includes('Brasileiro'));
+
+console.log(usuario.includes(2021));
+
+//retorna a posição
+
+console.log(usuario.indexOf(2021));
+//-1 falso
+console.log(usuario.indexOf('Brasileiro'));
+
+var arr1 = [3, 2, 1];
+var arr2 = ['Programador', 'front', 'end'];
+//resultado [3, 2, 1, 'Programador', 'front', 'end'];
+//pode se alterar a ordem 
+var resultado= arr2.concat(arr1).concat(['Aprendendo','Java', 'Script' ]);
+console.log(resultado);
+//spray --->3 pontos ...
+console.log([...arr1, ...arr2, ...['Aprendendo','Java', 'Script' ]]);
+
+console.log(usuario);
+
+var nome= usuario[0];
+console.log(nome);
+
+var idade = usuario [1];
+
+var ano = usuario[3];
+
+var [nome, idade, , , ano] = usuario;
+console.log(nome, idade, ano);
+
+console.log(nome, idade, ano);
+
+getElementByClassName(nome)
+</script>
+</body>
+</html>
