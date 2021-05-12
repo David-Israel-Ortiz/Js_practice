@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <Titulo> </Titulo>
+    </head> 
+<body> 
+</body>       
+<script  type="text/javascript"> 
+/* 
+Faça um programa em JavaScript que: 
+
+    Solicite ao usuário que insira dois números inteiros positivos;
+    Utilize um vetor para armazenar esses dois números;
+    Verifique se os números inseridos são inteiros positivos. Caso contrário, solicite ao usuário para inseri-los novamente;
+    Divida os dois números inteiros positivos;
+    Imprima na tela o resultado da divisão.
+*/
+
+var numeros= [];
+
+numeros[0] = solicitaPrimeiroNumero()
+numeros[1] = solicitaSegundoNumero()
+
+
+
+var resultadoDivisao = divida(numeros);
+alert('O resultado da divisão é igual a ' + resultadoDivisao);
+
+function solicitaPrimeiroNumero(){
+var int1 = prompt("Insira o primeiro número inteiro");
+if(int1< 0){
+    alert("O número precisa ser inteiro e positivo");
+return solicitaPrimeiroNumero
+}else{
+    return int1;
+}
+}
+function solicitaSegundoNumero(){
+var int2 = prompt("Insira o segundo número inteiro");
+    if(int2 < 0){
+        alert("O número precisa ser inteiro e positivo");
+    }else{
+        return int2;
+    }
+        
+    }
+function divida(numeros){
+    var resultado = 0;
+    resultado = numeros[0]/ numeros[1];
+    return resultado;
+}
+
+
+</script>
+</html>

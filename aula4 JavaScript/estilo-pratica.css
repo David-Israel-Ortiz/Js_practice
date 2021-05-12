@@ -1,0 +1,39 @@
+
+h1{
+    font-family: Arial;
+    background-color: rgb(133, 19, 19);
+    color:white;
+    text-align:center;
+    line-height:1.6em;
+    letter-spacing:1.5px;
+    font-size:50px;
+    margin-top: 0%;
+    margin-bottom:0%
+}
+
+h2{
+    font-family: Verdana;
+    background-color: black;
+    color:white;
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+}
+h3{
+    font-family: Verdana;
+    background-color: black;
+    color:white;
+    margin-top: 0%;
+    
+}
+ul{
+    font-weight: bold;
+    font-style: italic;
+    background-color:brown;
+    color:white;   
+    margin: 0%;
+}
+footer{
+    font-style:italic;
+    font-weight:bold 4px;
+}
